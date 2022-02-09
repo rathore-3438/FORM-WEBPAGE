@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    *{
+        width: 800px;
+        margin-left: 50px;
+        padding: 0%;
+    }
+    .red h2{
+        font-size: 34px;
+        background-color: black ;
+        background-repeat: no-repeat;
+        /* background-size: auto; */
+        color: wheat;
+    }
+    body {
+        /* background-image: url("mars rover.jpg"); */
+        background-color: gray;
+        background-position: center;
+        background-size: contain;
+        background-color: gray;
+        font-family: sans-serif;
+    }
+    
+    body h1{
+        color: darkblue;
+    }
+    body label{
+        size: 30cm;
+        
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="icon" href="/title_logo.png">
+    <div class="red">
+        <h2>Welcome to the survey form of ares society</h2>  
+        <hr>
+    </div>
+</head>
+
+<body>
+    <div class="first">
+    <h1>ARES Survey Form</h1>
+        <form action="backend.php">
+            <label for="name">Name</label>
+            <div>
+                <input type="text" name="username" id="name" placeholder="Enter your name">
+            </div>
+            <br>
+            <label for="email">Email ID</label>
+            <div>
+                <input type="email" name="useremail" id="email" placeholder="Enter your email">
+            </div>
+            <br>
+            <label for="age">Age (optional)</label>
+            <div>
+                <input type="number" name="userage" id="age" placeholder="Enter your age">
+            </div>
+            <br>
+            <label for="role">Which option best describes your current role</label>
+            <div>
+                <select name="userrole" id="role">
+                    <option value="Select" Selected>Select any one role</option>
+                    <option value="Graphic_design">Graphic design</option>
+                    <option value="Web development">Web development</option>
+                    <option value="Video Editor">Video Editor</option>
+                    <option value="3D_Blender">3D/Blender</option>
+                </select>
+            </div>
+            <br>
+            <label for="excities">Which option best describes your must about ARES</label>
+            <div>
+                <select name="userexcities" id="excities">Excities
+                    <option value="Select" Selected>Select any excities</option>
+                    <option value="choice1">Projects</option>
+                    <option value="choice2">Events</option>
+                    <option value="choice3">Prior interest</option>
+                    <option value="choice4">other(comment below)</option>
+                </select>
+            </div>
+            <br>
+            <label for="comment">Any comment or suggestion</label>
+            <div>
+                <!-- <textarea name="user comment" id="comment" cols="30" rows="10" placeholder="Write from here..."> </textarea> -->
+                <textarea name="user comment" id="comment" rows="5" cols="30"
+                    placeholder="Write from here..."></textarea>
+
+            </div>
+            <br>
+            <div>
+                <hr>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+        
+    </div>
+
+
+</body>
+
+</html>
